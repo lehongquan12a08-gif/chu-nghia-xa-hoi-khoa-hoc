@@ -5,8 +5,9 @@ import AudioController from '@/components/AudioController';
 import Hero from '@/components/Hero';
 import WordCascade from '@/components/WordCascade';
 import DateReveal from '@/components/DateReveal';
-import SlideSection from '@/components/SlideSection';
+import ClosingText from '@/components/ClosingText';
 import MilestoneChapter from '@/components/MilestoneChapter';
+import GallerySection from '@/components/GallerySection';
 import NgaBa from '@/components/NgaBa';
 import TimeSlider from '@/components/TimeSlider';
 import ProgressBars8 from '@/components/ProgressBars8';
@@ -15,10 +16,10 @@ import Footer from '@/components/Footer';
 import { MILESTONES } from '@/data/milestones';
 
 /**
- * TỪ TEM PHIẾU ĐẾN MÃ QR — MLN131 · Chương 3: Thời kỳ quá độ lên CNXH ở VN.
- * Mạch trinh thám 4 hồi, KHÔNG câu hỏi tương tác, KHÔNG phần tổng kết (giống
- * web Hành trình theo chân Bác): Cơn đói sau ngày thắng → Tấm bản đồ của Mác →
- * Ngã ba và khúc quanh → Chương đang viết. Lồng tiếng lắp sau (data/narration).
+ * TỪ TEM PHIẾU ĐẾN MÃ QR — BẢO TÀNG ẢNH thời kỳ quá độ (MLN131 · Chương 3).
+ * 4 GIAN trưng bày theo giai đoạn, ẢNH là nhân vật chính: mỗi gian mở bằng ảnh
+ * chủ full màn (MilestoneChapter) → tường ảnh bấm phóng to (GallerySection) →
+ * bảng thuyết minh ngắn (ClosingText). Lý luận đậm nhất nằm ở Ngã ba lịch sử.
  */
 export default function Home() {
   return (
@@ -29,9 +30,8 @@ export default function Home() {
       <AudioController />
 
       <main>
-        {/* ═══ MỞ ĐẦU ═══ */}
+        {/* ═══ ĐẠI SẢNH ═══ */}
         <Hero />
-        {/* Câu hỏi trinh thám dẫn toàn bài */}
         <WordCascade
           eyebrow="1975 – 1985"
           words={['THẮNG HAI ĐẾ QUỐC', 'NHƯNG THIẾU GẠO ĂN', 'VÌ SAO?']}
@@ -39,29 +39,23 @@ export default function Home() {
           perWordVh={70}
         />
 
-        {/* ═══ HỒI 1: CƠN ĐÓI SAU NGÀY THẮNG (sepia) ═══ */}
+        {/* ═══ GIAN 1 · ĐÊM TRƯỚC ĐỔI MỚI (1975–1985) ═══ */}
         <div className="era-cu">
-        <SlideSection
+        <MilestoneChapter milestone={MILESTONES.gian1} />
+        </div>
+        <GallerySection
           id="ch-baocap"
-          eyebrow="Hồi 1 · Cơn đói sau ngày thắng"
-          title="1975 – 1985 — Đêm trước Đổi mới"
-          groups={[
-            {
-              bullets: [
-                'Đất nước bước ra khỏi chiến tranh với nền nông nghiệp lạc hậu, bị tàn phá nặng nề, lại bị bao vây cấm vận.',
-                'Cơ chế kế hoạch hóa tập trung, quan liêu, bao cấp: mua bán bằng tem phiếu, xếp hàng trước cửa hàng mậu dịch.',
-                'Sản xuất đình đốn, lưu thông ách tắc — khủng hoảng kinh tế – xã hội kéo dài.',
-                'Một đất nước vừa làm nên toàn thắng lịch sử lại phải lo từng bữa gạo.',
-              ],
-            },
-          ]}
-          images={[
-            { src: '/images/csk/baocap-xephang.svg', caption: 'Xếp hàng trước cửa hàng mậu dịch quốc doanh (ô chờ ảnh tư liệu — nguồn TTXVN)' },
-            { src: '/images/csk/baocap-sogao.svg', fit: 'contain', caption: 'Sổ gạo, tem phiếu thời bao cấp (ô chờ ảnh tư liệu)' },
+          eyebrow="Gian 1 · Hiện vật"
+          title="Đời sống thời bao cấp"
+          intro="Những hiện vật kể chuyện thay lời: một tấm tem nhỏ từng quyết định bữa cơm của cả một gia đình."
+          photos={[
+            { src: '/images/csk/baocap-sogao.svg', title: 'Sổ mua lương thực ("sổ gạo")', year: '1976–1986', source: 'Ô chờ ảnh tư liệu — Bảo tàng Hà Nội / TTXVN', contain: true },
+            { src: '/images/csk/bao-tem2.svg', title: 'Tem phiếu — gạo, thịt, vải', year: '1978', source: 'Ô chờ ảnh tư liệu — scan hiện vật' },
+            { src: '/images/csk/baocap-xephang.svg', title: 'Xếp hàng trước cửa hàng mậu dịch quốc doanh', year: '~1980', source: 'Ô chờ ảnh tư liệu — TTXVN', tall: true },
+            { src: '/images/csk/pho-xedap.svg', title: 'Phố Hà Nội — thời xe đạp', year: 'thập niên 1980', source: 'Ô chờ ảnh tư liệu' },
+            { src: '/images/csk/hero-tem.svg', title: 'Phiếu mua lương thực (đồ họa phục dựng)', year: '1985', source: 'Đồ họa vector do nhóm phục dựng' },
           ]}
         />
-        </div>
-        {/* Đỉnh khủng hoảng — con số duy nhất cần nhớ của hồi 1 */}
         <DateReveal
           id="ch-774"
           parts={['774,7%']}
@@ -72,124 +66,79 @@ export default function Home() {
           ]}
           background="radial-gradient(ellipse at 50% 42%, #2a1c0c 0%, #14100a 70%)"
         />
-
-        {/* ═══ HỒI 2: TẤM BẢN ĐỒ CỦA MÁC ═══ */}
-        <WordCascade
-          eyebrow="Hồi 2 · Lý luận"
-          words={['MUỐN HIỂU VÌ SAO', 'PHẢI MỞ TẤM BẢN ĐỒ']}
-          perWordVh={70}
-        />
-        <div className="era-cu">
-        <SlideSection
-          id="ch-bando"
-          eyebrow="Hồi 2 · Tấm bản đồ của Mác"
-          groups={[
-            {
-              title: 'Chủ nghĩa xã hội là gì?',
-              bullets: [
-                'Là giai đoạn ĐẦU của hình thái kinh tế – xã hội cộng sản chủ nghĩa.',
-                'Ra đời từ mâu thuẫn giữa lực lượng sản xuất xã hội hóa cao với quan hệ sản xuất tư bản chủ nghĩa dựa trên chiếm hữu tư nhân.',
-                'Gắn liền với sứ mệnh lịch sử của giai cấp công nhân, thông qua cách mạng vô sản.',
-              ],
-            },
-          ]}
-          images={[
-            { src: '/images/csk/bando-mac.svg', caption: 'C. Mác — người vẽ tấm bản đồ lý luận (ô chờ ảnh tư liệu)' },
-          ]}
-        />
-        </div>
-        <SlideSection
-          id="ch-dactrung6"
-          eyebrow="Hồi 2 · Tấm bản đồ của Mác"
-          background="radial-gradient(ellipse at 50% 40%, #1c150c 0%, #14100a 72%)"
-          groups={[
-            {
-              title: '6 đặc trưng bản chất của chủ nghĩa xã hội',
-              bullets: [
-                'Giải phóng giai cấp, giải phóng dân tộc, giải phóng xã hội, giải phóng con người — tạo điều kiện để con người phát triển toàn diện.',
-                'Do nhân dân lao động làm chủ.',
-                'Có nền kinh tế phát triển cao dựa trên lực lượng sản xuất hiện đại và chế độ công hữu về tư liệu sản xuất chủ yếu.',
-                'Có nhà nước kiểu mới mang bản chất giai cấp công nhân, đại biểu cho lợi ích, quyền lực và ý chí của nhân dân lao động.',
-                'Có nền văn hóa phát triển cao, kế thừa và phát huy giá trị văn hóa dân tộc và tinh hoa văn hóa nhân loại.',
-                'Bảo đảm bình đẳng, đoàn kết giữa các dân tộc; có quan hệ hữu nghị, hợp tác với nhân dân các nước.',
-              ],
-            },
-          ]}
-        />
-        <SlideSection
-          id="ch-quado"
-          eyebrow="Hồi 2 · Tấm bản đồ của Mác"
-          background="radial-gradient(ellipse at 50% 40%, #1c150c 0%, #14100a 72%)"
-          groups={[
-            {
-              title: 'Thời kỳ quá độ — cái cũ và cái mới đan xen',
-              bullets: [
-                'Kinh tế: tất yếu tồn tại nền kinh tế NHIỀU thành phần, trong đó có những thành phần đối lập.',
-                'Chính trị: thiết lập, tăng cường chuyên chính vô sản — nhân dân lao động từng bước làm chủ.',
-                'Tư tưởng – văn hóa: còn tồn tại nhiều tư tưởng khác nhau, chủ yếu là tư tưởng vô sản và tư tưởng tư sản.',
-                'Xã hội: còn nhiều giai cấp, tầng lớp; còn khác biệt thành thị – nông thôn, lao động trí óc – chân tay.',
-              ],
-            },
+        <ClosingText
+          eyebrow="Bảng thuyết minh · Gian 1"
+          paragraphs={[
+            'Chủ nghĩa xã hội là giai đoạn ĐẦU của hình thái kinh tế – xã hội cộng sản chủ nghĩa; thời kỳ quá độ mang đặc điểm "cái cũ và cái mới đan xen" — kinh tế nhiều thành phần, xã hội nhiều giai tầng. (Giáo trình CNXHKH 2021, Chương 3)',
+            'Khủng hoảng không phủ nhận con đường — nó đòi hỏi đổi mới cách đi trên con đường ấy.',
           ]}
         />
 
-        {/* ═══ HỒI 3: NGÃ BA VÀ KHÚC QUANH ═══ */}
+        {/* HIỆN VẬT LÝ LUẬN: hai con đường năm 1975 + luận điểm Hồ Chí Minh */}
         <NgaBa id="ch-ngaba" />
-        <SlideSection
-          id="ch-boqua"
-          eyebrow="Hồi 3 · Làm rõ nội hàm"
-          title='"Bỏ qua" — không phải đốt cháy giai đoạn'
-          background="radial-gradient(ellipse at 50% 40%, #1c150c 0%, #14100a 72%)"
-          groups={[
-            {
-              title: 'Bỏ qua điều gì?',
-              bullets: [
-                'Bỏ qua việc xác lập vị trí THỐNG TRỊ của quan hệ sản xuất và kiến trúc thượng tầng tư bản chủ nghĩa.',
-              ],
-            },
-            {
-              title: 'Kế thừa điều gì?',
-              bullets: [
-                'Tiếp thu, kế thừa những thành tựu mà nhân loại đã đạt được dưới chủ nghĩa tư bản — đặc biệt về khoa học và công nghệ — để phát triển nhanh lực lượng sản xuất, xây dựng nền kinh tế hiện đại. (Văn kiện Đại hội IX)',
-              ],
-              accent: true,
-            },
-          ]}
-        />
-        {/* CAO TRÀO: Đại hội VI — từ màn này màu bắt đầu tràn vào */}
-        <MilestoneChapter milestone={MILESTONES.doiMoi} />
 
-        {/* ═══ HỒI 4: CHƯƠNG ĐANG VIẾT (có màu) ═══ */}
-        <TimeSlider id="ch-keoman" />
-        <SlideSection
-          id="ch-homnay"
-          eyebrow="Hồi 4 · Chương đang viết"
-          title="Gần 40 năm Đổi mới"
-          background="linear-gradient(180deg, #14100a 0%, #10201d 55%, #14100a 100%)"
-          groups={[
-            {
-              bullets: [
-                'GDP: từ khoảng 14 tỷ USD (1985) lên khoảng 430 tỷ USD (2023) — nguồn: World Bank.',
-                'Tỷ lệ nghèo: từ 58% (1993) xuống dưới 3% — nguồn: Tổng cục Thống kê / World Bank.',
-                'Kim ngạch xuất nhập khẩu vượt 730 tỷ USD (2022) — nguồn: Tổng cục Thống kê.',
-                'Từ nước thiếu lương thực trở thành một trong những nước xuất khẩu gạo hàng đầu thế giới.',
-              ],
-            },
-            {
-              bullets: [
-                'Kinh tế thị trường định hướng xã hội chủ nghĩa — sự vận dụng sáng tạo lý luận quá độ vào điều kiện Việt Nam.',
-              ],
-              accent: true,
-            },
-          ]}
-          images={[
-            { src: '/images/csk/homnay-1.svg', caption: 'Thành phố hôm nay (ô chờ ảnh — nhóm tự chụp)' },
-            { src: '/images/csk/homnay-2.svg', caption: 'Mã QR ở quán vỉa hè (ô chờ ảnh — nhóm tự chụp)' },
+        {/* ═══ GIAN 2 · KHÚC QUANH (1986) — màu bắt đầu tràn vào ═══ */}
+        <MilestoneChapter milestone={MILESTONES.doiMoi} />
+        <GallerySection
+          id="ch-1986"
+          eyebrow="Gian 2 · Hiện vật"
+          title="Mười ngày tháng Chạp 1986"
+          background="linear-gradient(180deg, #14100a 0%, #16281f 60%, #14100a 100%)"
+          photos={[
+            { src: '/images/csk/dh6.svg', title: 'Phiên khai mạc Đại hội VI', year: '15/12/1986', source: 'Ô chờ ảnh tư liệu — TTXVN', tall: true },
+            { src: '/images/csk/gian2-bao.svg', title: 'Trang báo đưa tin đường lối Đổi mới', year: '12/1986', source: 'Ô chờ ảnh — thư viện báo Nhân Dân' },
+            { src: '/images/csk/baocap-sogao.svg', title: 'Tấm sổ gạo — những năm cuối cùng', year: '1986–1989', source: 'Ô chờ ảnh tư liệu', contain: true },
           ]}
         />
-        {/* 8 thanh tiến độ dang dở — hình ảnh hóa chữ "quá độ" */}
+        <ClosingText
+          eyebrow="Bảng thuyết minh · Gian 2"
+          paragraphs={[
+            'Quá độ BỎ QUA chế độ tư bản chủ nghĩa là bỏ qua việc xác lập vị trí thống trị của quan hệ sản xuất và kiến trúc thượng tầng TBCN — nhưng tiếp thu, kế thừa thành tựu nhân loại, đặc biệt về khoa học và công nghệ. (Văn kiện Đại hội IX)',
+            'Bỏ qua — không phải đốt cháy giai đoạn.',
+          ]}
+        />
+
+        {/* HIỆN VẬT TƯƠNG TÁC: kéo màn thời gian */}
+        <TimeSlider id="ch-keoman" />
+
+        {/* ═══ GIAN 3 · CỬA MỞ (1986–2007) ═══ */}
+        <MilestoneChapter milestone={MILESTONES.gian3} />
+        <GallerySection
+          id="ch-cuamo"
+          eyebrow="Gian 3 · Hiện vật"
+          title="Từ thiếu gạo đến xuất khẩu gạo"
+          background="linear-gradient(180deg, #14100a 0%, #10201d 60%, #14100a 100%)"
+          photos={[
+            { src: '/images/csk/gian3.svg', title: 'Nông dân được mùa sau Khoán 10', year: '1988–1989', source: 'Ô chờ ảnh tư liệu — TTXVN', tall: true },
+            { src: '/images/csk/gian3-asean.svg', title: 'Việt Nam gia nhập ASEAN', year: '28/07/1995', source: 'Ô chờ ảnh tư liệu — TTXVN' },
+            { src: '/images/csk/gian3-wto.svg', title: 'Gia nhập Tổ chức Thương mại Thế giới (WTO)', year: '11/01/2007', source: 'Ô chờ ảnh tư liệu — TTXVN' },
+            { src: '/images/csk/wm-rice.webp', title: 'Vựa lúa Đồng bằng sông Cửu Long (ảnh minh họa)', year: 'Cần Thơ', source: 'Wikimedia Commons · Dragfyre · CC BY-SA 3.0' },
+          ]}
+        />
+
+        {/* ═══ GIAN 4 · CHƯƠNG ĐANG VIẾT (HÔM NAY) ═══ */}
+        <MilestoneChapter milestone={MILESTONES.gian4} />
+        <GallerySection
+          id="ch-homnay"
+          eyebrow="Gian 4 · Hiện vật"
+          title="Đất nước của mã QR"
+          background="linear-gradient(180deg, #14100a 0%, #10201d 60%, #14100a 100%)"
+          photos={[
+            { src: '/images/csk/wm-skyline.webp', title: 'Đường chân trời TP. Hồ Chí Minh bên sông Sài Gòn', year: '2020s', source: 'Wikimedia Commons · Pimnl · CC0', tall: true },
+            { src: '/images/csk/homnay-2.svg', title: 'Quét mã QR ở quán vỉa hè', year: 'hôm nay', source: 'Ô chờ ảnh — nhóm tự chụp' },
+            { src: '/images/csk/wm-metro.webp', title: 'Metro Bến Thành – Suối Tiên qua Thảo Điền', year: '2024', source: 'Wikimedia Commons · HikariTenshi · CC BY 4.0' },
+            { src: '/images/csk/homnay-factory.svg', title: 'Dây chuyền nhà máy công nghệ', year: '2020s', source: 'Ô chờ ảnh — CC' },
+            { src: '/images/csk/pho-nay.svg', title: 'Cùng góc phố ấy — hôm nay (đồ họa)', year: 'hôm nay', source: 'Đồ họa vector do nhóm phục dựng' },
+          ]}
+        />
+        <ClosingText
+          eyebrow="Bảng thuyết minh · Gian 4"
+          paragraphs={[
+            'GDP từ khoảng 14 tỷ USD (1985) lên khoảng 430 tỷ USD (2023); tỷ lệ nghèo từ 58% (1993) xuống dưới 3%; kim ngạch xuất nhập khẩu vượt 730 tỷ USD (2022). Nguồn: Tổng cục Thống kê · World Bank.',
+            'Kinh tế thị trường định hướng xã hội chủ nghĩa — sự vận dụng sáng tạo lý luận quá độ vào Việt Nam.',
+          ]}
+        />
         <ProgressBars8 id="ch-2011" />
-        {/* Kết — thay phần tổng kết bằng chữ lướt */}
         <WordCascade
           id="ch-chuongcuoi"
           eyebrow="Thời kỳ quá độ — nghĩa là chưa kết thúc"

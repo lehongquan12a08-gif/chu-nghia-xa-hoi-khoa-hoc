@@ -11,13 +11,13 @@ export interface TimelineEntry {
 
 /** Các mốc hiển thị trên thanh Timeline Indicator (phải màn hình desktop). */
 export const timelineMarkers: TimelineEntry[] = [
-  { id: 'hero', year: 'MỞ ĐẦU', short: 'Từ tem phiếu đến mã QR' },
-  { id: 'ch-baocap', year: '1975', short: 'Đêm trước Đổi mới' },
-  { id: 'ch-bando', year: 'LÝ LUẬN', short: 'Tấm bản đồ của Mác' },
+  { id: 'hero', year: 'SẢNH', short: 'Từ tem phiếu đến mã QR' },
+  { id: 'gian-1', year: 'GIAN 1', short: 'Đêm trước Đổi mới · 1975–1985' },
   { id: 'ch-ngaba', year: 'NGÃ BA', short: 'Quá độ bỏ qua TBCN' },
-  { id: 'ch-1986', year: '1986', short: 'Đổi mới' },
-  { id: 'ch-homnay', year: 'HÔM NAY', short: 'Gần 40 năm Đổi mới' },
-  { id: 'ch-chuongcuoi', year: 'CHƯƠNG CUỐI', short: 'Do chúng ta viết' },
+  { id: 'gian-2', year: 'GIAN 2', short: 'Khúc quanh · 1986' },
+  { id: 'gian-3', year: 'GIAN 3', short: 'Cửa mở · 1986–2007' },
+  { id: 'gian-4', year: 'GIAN 4', short: 'Chương đang viết · hôm nay' },
+  { id: 'ch-chuongcuoi', year: 'KẾT', short: 'Do chúng ta viết' },
 ];
 
 /** Trích dẫn đã kiểm chứng — luận điểm trung tâm của chương. */
@@ -28,10 +28,10 @@ export const verifiedQuote = {
 };
 
 export const NAV_LINKS = [
-  { label: 'Mở đầu', href: '#hero' },
-  { label: 'Bao cấp', href: '#ch-baocap' },
-  { label: 'Lý luận', href: '#ch-bando' },
-  { label: 'Đổi mới', href: '#ch-1986' },
-  { label: 'Hôm nay', href: '#ch-homnay' },
+  { label: 'Sảnh', href: '#hero' },
+  { label: 'Gian 1 · Bao cấp', href: '#gian-1' },
+  { label: 'Gian 2 · 1986', href: '#gian-2' },
+  { label: 'Gian 3 · Cửa mở', href: '#gian-3' },
+  { label: 'Gian 4 · Hôm nay', href: '#gian-4' },
   { label: 'Về dự án', href: '#footer' },
 ];
