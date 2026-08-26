@@ -6,6 +6,10 @@
 | `wm-skyline.webp` | Skyline TP.HCM bên sông Sài Gòn | Pimnl | CC0 (public domain) | commons.wikimedia.org/wiki/File:Ho_Chi_Minh_City_Skyline.jpg |
 | `wm-metro.webp` | Metro Bến Thành–Suối Tiên qua Thảo Điền | HikariTenshi | CC BY 4.0 | commons.wikimedia.org/wiki/File:HCMC_Metro_No1_Ben_Thanh_Suoi_Tien_in_Thao_Dien,_Thu_Duc.jpg |
 | `wm-rice.webp` | Đồng lúa Cần Thơ (minh họa vựa lúa) | Dragfyre | CC BY-SA 3.0 | commons.wikimedia.org/wiki/File:Rice_harvesting_in_Can_Tho.JPG |
+| `wm-vendor.webp` | Gánh hàng rong phố cổ Hà Nội | yeowatzup | CC BY 2.0 | commons.wikimedia.org/wiki/File:Street_vendors_in_old_quarter,_Hanoi,_Vietnam.jpg |
+| `wm-jam.webp` | Dòng xe máy TP.HCM | Mike | CC BY 2.0 | commons.wikimedia.org/wiki/File:Motorbike_jam_Saigon_Vietnam.jpg |
+| `wm-thaprua.webp` | Tháp Rùa trước cao ốc kính | Takeshi Aida | CC BY-SA 2.0 | commons.wikimedia.org/wiki/File:Hoan_Kiem_Lake,_Turtle_Tower,_Daytime_(20231223)_(53489228584).jpg |
+| `wm-longbien.webp` | Cầu Long Biên (biển Daydé & Pillé 1899–1902) | Quangpraha | CC0 | commons.wikimedia.org/wiki/File:Long-bien-bridge-3371617.jpg |
 
 ## Đồ họa nhóm tự phục dựng (bản quyền của nhóm)
 `hero-tem.svg` (phiếu mua lương thực) · `pho-xua.svg` / `pho-nay.svg` (phố hai thời kỳ)

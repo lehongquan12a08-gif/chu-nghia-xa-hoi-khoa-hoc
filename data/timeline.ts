@@ -13,7 +13,6 @@ export interface TimelineEntry {
 export const timelineMarkers: TimelineEntry[] = [
   { id: 'hero', year: 'SẢNH', short: 'Từ tem phiếu đến mã QR' },
   { id: 'gian-1', year: 'GIAN 1', short: 'Đêm trước Đổi mới · 1975–1985' },
-  { id: 'ch-ngaba', year: 'NGÃ BA', short: 'Quá độ bỏ qua TBCN' },
   { id: 'gian-2', year: 'GIAN 2', short: 'Khúc quanh · 1986' },
   { id: 'gian-3', year: 'GIAN 3', short: 'Cửa mở · 1986–2007' },
   { id: 'gian-4', year: 'GIAN 4', short: 'Chương đang viết · hôm nay' },

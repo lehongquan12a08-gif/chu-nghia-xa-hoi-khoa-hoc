@@ -5,13 +5,10 @@ import AudioController from '@/components/AudioController';
 import Hero from '@/components/Hero';
 import WordCascade from '@/components/WordCascade';
 import DateReveal from '@/components/DateReveal';
-import ClosingText from '@/components/ClosingText';
 import MilestoneChapter from '@/components/MilestoneChapter';
 import GallerySection from '@/components/GallerySection';
-import NgaBa from '@/components/NgaBa';
 import TimeSlider from '@/components/TimeSlider';
 import ProgressBars8 from '@/components/ProgressBars8';
-import GiaiTrinhAI from '@/components/GiaiTrinhAI';
 import Footer from '@/components/Footer';
 import { MILESTONES } from '@/data/milestones';
 
@@ -66,17 +63,6 @@ export default function Home() {
           ]}
           background="radial-gradient(ellipse at 50% 42%, #2a1c0c 0%, #14100a 70%)"
         />
-        <ClosingText
-          eyebrow="Bảng thuyết minh · Gian 1"
-          paragraphs={[
-            'Chủ nghĩa xã hội là giai đoạn ĐẦU của hình thái kinh tế – xã hội cộng sản chủ nghĩa; thời kỳ quá độ mang đặc điểm "cái cũ và cái mới đan xen" — kinh tế nhiều thành phần, xã hội nhiều giai tầng. (Giáo trình CNXHKH 2021, Chương 3)',
-            'Khủng hoảng không phủ nhận con đường — nó đòi hỏi đổi mới cách đi trên con đường ấy.',
-          ]}
-        />
-
-        {/* HIỆN VẬT LÝ LUẬN: hai con đường năm 1975 + luận điểm Hồ Chí Minh */}
-        <NgaBa id="ch-ngaba" />
-
         {/* ═══ GIAN 2 · KHÚC QUANH (1986) — màu bắt đầu tràn vào ═══ */}
         <MilestoneChapter milestone={MILESTONES.doiMoi} />
         <GallerySection
@@ -90,14 +76,6 @@ export default function Home() {
             { src: '/images/csk/baocap-sogao.svg', title: 'Tấm sổ gạo — những năm cuối cùng', year: '1986–1989', source: 'Ô chờ ảnh tư liệu', contain: true },
           ]}
         />
-        <ClosingText
-          eyebrow="Bảng thuyết minh · Gian 2"
-          paragraphs={[
-            'Quá độ BỎ QUA chế độ tư bản chủ nghĩa là bỏ qua việc xác lập vị trí thống trị của quan hệ sản xuất và kiến trúc thượng tầng TBCN — nhưng tiếp thu, kế thừa thành tựu nhân loại, đặc biệt về khoa học và công nghệ. (Văn kiện Đại hội IX)',
-            'Bỏ qua — không phải đốt cháy giai đoạn.',
-          ]}
-        />
-
         {/* HIỆN VẬT TƯƠNG TÁC: kéo màn thời gian */}
         <TimeSlider id="ch-keoman" />
 
@@ -113,6 +91,7 @@ export default function Home() {
             { src: '/images/csk/gian3-asean.svg', title: 'Việt Nam gia nhập ASEAN', year: '28/07/1995', source: 'Ô chờ ảnh tư liệu — TTXVN' },
             { src: '/images/csk/gian3-wto.svg', title: 'Gia nhập Tổ chức Thương mại Thế giới (WTO)', year: '11/01/2007', source: 'Ô chờ ảnh tư liệu — TTXVN' },
             { src: '/images/csk/wm-rice.webp', title: 'Vựa lúa Đồng bằng sông Cửu Long (ảnh minh họa)', year: 'Cần Thơ', source: 'Wikimedia Commons · Dragfyre · CC BY-SA 3.0' },
+            { src: '/images/csk/wm-vendor.webp', title: 'Gánh hàng trên phố — kinh tế nhiều thành phần đời thường', year: 'Hà Nội', source: 'Wikimedia Commons · yeowatzup · CC BY 2.0' },
           ]}
         />
 
@@ -127,15 +106,10 @@ export default function Home() {
             { src: '/images/csk/wm-skyline.webp', title: 'Đường chân trời TP. Hồ Chí Minh bên sông Sài Gòn', year: '2020s', source: 'Wikimedia Commons · Pimnl · CC0', tall: true },
             { src: '/images/csk/homnay-2.svg', title: 'Quét mã QR ở quán vỉa hè', year: 'hôm nay', source: 'Ô chờ ảnh — nhóm tự chụp' },
             { src: '/images/csk/wm-metro.webp', title: 'Metro Bến Thành – Suối Tiên qua Thảo Điền', year: '2024', source: 'Wikimedia Commons · HikariTenshi · CC BY 4.0' },
+            { src: '/images/csk/wm-jam.webp', title: 'Dòng xe máy — nhịp sống đô thị', year: 'TP.HCM', source: 'Wikimedia Commons · Mike · CC BY 2.0' },
+            { src: '/images/csk/wm-thaprua.webp', title: 'Tháp Rùa trước những tòa nhà kính — truyền thống giữa hiện đại', year: '2023', source: 'Wikimedia Commons · Takeshi Aida · CC BY-SA 2.0' },
+            { src: '/images/csk/wm-longbien.webp', title: 'Cầu Long Biên (1899–1902) — chứng nhân đi qua mọi thời kỳ', year: 'hôm nay', source: 'Wikimedia Commons · Quangpraha · CC0' },
             { src: '/images/csk/homnay-factory.svg', title: 'Dây chuyền nhà máy công nghệ', year: '2020s', source: 'Ô chờ ảnh — CC' },
-            { src: '/images/csk/pho-nay.svg', title: 'Cùng góc phố ấy — hôm nay (đồ họa)', year: 'hôm nay', source: 'Đồ họa vector do nhóm phục dựng' },
-          ]}
-        />
-        <ClosingText
-          eyebrow="Bảng thuyết minh · Gian 4"
-          paragraphs={[
-            'GDP từ khoảng 14 tỷ USD (1985) lên khoảng 430 tỷ USD (2023); tỷ lệ nghèo từ 58% (1993) xuống dưới 3%; kim ngạch xuất nhập khẩu vượt 730 tỷ USD (2022). Nguồn: Tổng cục Thống kê · World Bank.',
-            'Kinh tế thị trường định hướng xã hội chủ nghĩa — sự vận dụng sáng tạo lý luận quá độ vào Việt Nam.',
           ]}
         />
         <ProgressBars8 id="ch-2011" />
@@ -147,8 +121,6 @@ export default function Home() {
           perWordVh={80}
         />
 
-        {/* Giải trình AI (bắt buộc của assignment) + Ending */}
-        <GiaiTrinhAI id="giai-trinh-ai" />
         <Footer />
       </main>
     </>

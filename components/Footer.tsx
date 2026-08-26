@@ -38,10 +38,10 @@ export default function Footer() {
           Xem lại hành trình
         </a>
         <a
-          href="#giai-trinh-ai"
+          href="#hero"
           className="group relative border border-white/20 px-9 py-4 font-body text-[12px] uppercase tracking-[0.24em] text-vn-ivory/80 transition-colors duration-500 hover:border-white/60 hover:text-vn-ivory"
         >
-          Giải trình AI
+          Về sảnh chính
         </a>
       </Reveal>
 
