@@ -90,7 +90,7 @@ export default function Home() {
             { src: '/images/csk/gian3.svg', title: 'Nông dân được mùa sau Khoán 10', year: '1988–1989', source: 'Ô chờ ảnh tư liệu — TTXVN', tall: true },
             { src: '/images/csk/gian3-asean.svg', title: 'Việt Nam gia nhập ASEAN', year: '28/07/1995', source: 'Ô chờ ảnh tư liệu — TTXVN' },
             { src: '/images/csk/gian3-wto.svg', title: 'Gia nhập Tổ chức Thương mại Thế giới (WTO)', year: '11/01/2007', source: 'Ô chờ ảnh tư liệu — TTXVN' },
-            { src: '/images/csk/wm-rice.webp', title: 'Vựa lúa Đồng bằng sông Cửu Long (ảnh minh họa)', year: 'Cần Thơ', source: 'Wikimedia Commons · Dragfyre · CC BY-SA 3.0' },
+            { src: '/images/csk/wm-rice.webp', title: 'Vựa lúa Đồng bằng sông Cửu Long', year: 'Cần Thơ', source: 'Wikimedia Commons · Dragfyre · CC BY-SA 3.0' },
             { src: '/images/csk/wm-vendor.webp', title: 'Gánh hàng trên phố — kinh tế nhiều thành phần đời thường', year: 'Hà Nội', source: 'Wikimedia Commons · yeowatzup · CC BY 2.0' },
           ]}
         />

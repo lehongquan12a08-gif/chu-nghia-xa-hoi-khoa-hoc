@@ -81,8 +81,14 @@ export default function TimeSlider({
             className="relative w-full cursor-ew-resize touch-pan-y select-none overflow-hidden rounded-[4px] border border-vn-gold-antique/30 shadow-[0_30px_80px_rgba(0,0,0,0.6)]"
             style={{ aspectRatio: '12/7' }}
             onPointerDown={(e) => {
+              // chặn drag-ảnh mặc định của trình duyệt (nó nuốt thao tác kéo)
+              e.preventDefault();
               draggingRef.current = true;
-              (e.target as HTMLElement).setPointerCapture?.(e.pointerId);
+              try {
+                e.currentTarget.setPointerCapture?.(e.pointerId);
+              } catch {
+                /* pointer không hợp lệ — vẫn kéo được nhờ listener trên container */
+              }
               posFromEvent(e.clientX);
             }}
             onPointerMove={(e) => {
@@ -93,11 +99,11 @@ export default function TimeSlider({
           >
             {/* nền: 1985 sepia */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={before} alt={beforeLabel} className="absolute inset-0 h-full w-full object-cover" />
+            <img src={before} alt={beforeLabel} draggable={false} className="absolute inset-0 h-full w-full select-none object-cover" />
             {/* phủ: hôm nay, cắt theo vị trí gạt */}
             <div className="absolute inset-0" style={{ clipPath: `inset(0 0 0 ${pos}%)` }}>
               {/* eslint-disable-next-line @next/next/no-img-element */}
-              <img src={after} alt={afterLabel} className="absolute inset-0 h-full w-full object-cover" />
+              <img src={after} alt={afterLabel} draggable={false} className="absolute inset-0 h-full w-full select-none object-cover" />
             </div>
             {/* vạch gạt + tay nắm */}
             <div className="pointer-events-none absolute inset-y-0" style={{ left: `${pos}%` }}>

@@ -55,7 +55,6 @@ export default function Footer() {
       {/* Credits — small & quiet */}
       <div className="mt-16 flex flex-wrap items-center justify-center gap-x-4 gap-y-1 font-body text-[11px] tracking-[0.14em] text-vn-ivory/35">
         <span>Thực hiện · <span className="text-vn-ivory/55">Lê Hồng Quân</span></span>
-        <span>Lồng tiếng · <span className="text-vn-ivory/55">Phạm Thảo Nguyên</span></span>
       </div>
     </footer>
   );
