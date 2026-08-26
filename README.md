@@ -12,4 +12,4 @@ tiếng khóa nhịp cuộn, nhạc nền tự soạn.
 - Chạy thử: `npm install` rồi `npm run dev -- -p 3002`
 - Nội dung đối chiếu Giáo trình CNXHKH (2021), Cương lĩnh 2011, Văn kiện Đại hội VI & IX
 
-Thực hiện: **Lê Hồng Quân** (web) · **Phạm Thảo Nguyên** (lồng tiếng)
+Thực hiện: **Lê Hồng Quân** (web) 
