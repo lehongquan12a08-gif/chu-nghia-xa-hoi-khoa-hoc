@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 700">
+  <defs>
+    <linearGradient id="troi-nay" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0d2b33"/>
+      <stop offset="100%" stop-color="#123430"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="700" fill="url(#troi-nay)"/>
+  <!-- skyline cao ốc hôm nay -->
+  <g fill="#0a1a17">
+    <rect x="0" y="480" width="1200" height="220"/>
+    <rect x="60" y="250" width="110" height="230"/>
+    <rect x="200" y="180" width="90" height="300"/>
+    <rect x="320" y="300" width="130" height="180"/>
+    <rect x="480" y="120" width="80" height="360"/>
+    <path d="M480 120 L520 60 L560 120 Z"/>
+    <rect x="590" y="230" width="120" height="250"/>
+    <rect x="740" y="160" width="95" height="320"/>
+    <rect x="865" y="280" width="140" height="200"/>
+    <rect x="1040" y="210" width="100" height="270"/>
+    <!-- cẩu tháp: vẫn đang xây -->
+    <g stroke="#0a1a17" stroke-width="8" fill="none">
+      <path d="M960 120 L960 280 M900 140 L1080 140 M1080 140 L1080 190"/>
+    </g>
+  </g>
+  <!-- cửa sổ sáng đèn dày đặc -->
+  <g fill="#e9b84c" opacity="0.9">
+    <rect x="80" y="270" width="10" height="14"/><rect x="104" y="270" width="10" height="14"/><rect x="128" y="300" width="10" height="14"/><rect x="80" y="330" width="10" height="14"/><rect x="128" y="360" width="10" height="14"/>
+    <rect x="216" y="200" width="10" height="14"/><rect x="240" y="230" width="10" height="14"/><rect x="264" y="200" width="10" height="14"/><rect x="216" y="290" width="10" height="14"/><rect x="264" y="320" width="10" height="14"/>
+    <rect x="500" y="150" width="10" height="14"/><rect x="524" y="180" width="10" height="14"/><rect x="500" y="240" width="10" height="14"/><rect x="524" y="300" width="10" height="14"/>
+    <rect x="610" y="260" width="10" height="14"/><rect x="640" y="290" width="10" height="14"/><rect x="670" y="260" width="10" height="14"/><rect x="610" y="350" width="10" height="14"/>
+    <rect x="760" y="190" width="10" height="14"/><rect x="790" y="220" width="10" height="14"/><rect x="760" y="280" width="10" height="14"/><rect x="810" y="310" width="10" height="14"/>
+    <rect x="1060" y="240" width="10" height="14"/><rect x="1090" y="270" width="10" height="14"/><rect x="1060" y="330" width="10" height="14"/>
+  </g>
+  <!-- mã QR cách điệu (trang trí, không quét được) -->
+  <g transform="translate(330,555)">
+    <rect x="-14" y="-14" width="128" height="128" fill="#f0e6ce" rx="6"/>
+    <g fill="#14100a">
+      <rect x="0" y="0" width="28" height="28"/><rect x="6" y="6" width="16" height="16" fill="#f0e6ce"/><rect x="10" y="10" width="8" height="8"/>
+      <rect x="72" y="0" width="28" height="28"/><rect x="78" y="6" width="16" height="16" fill="#f0e6ce"/><rect x="82" y="10" width="8" height="8"/>
+      <rect x="0" y="72" width="28" height="28"/><rect x="6" y="78" width="16" height="16" fill="#f0e6ce"/><rect x="10" y="82" width="8" height="8"/>
+      <rect x="40" y="8" width="8" height="8"/><rect x="56" y="16" width="8" height="8"/><rect x="40" y="32" width="8" height="8"/><rect x="64" y="40" width="8" height="8"/>
+      <rect x="8" y="40" width="8" height="8"/><rect x="24" y="48" width="8" height="8"/><rect x="48" y="48" width="8" height="8"/><rect x="88" y="40" width="8" height="8"/>
+      <rect x="40" y="64" width="8" height="8"/><rect x="56" y="72" width="8" height="8"/><rect x="72" y="56" width="8" height="8"/><rect x="88" y="72" width="8" height="8"/>
+      <rect x="40" y="88" width="8" height="8"/><rect x="64" y="88" width="8" height="8"/><rect x="88" y="88" width="8" height="8"/>
+    </g>
+  </g>
+  <text x="46" y="668" font-family="IBM Plex Mono, monospace" font-size="24" letter-spacing="6" fill="#3fb8a9">CŨNG GÓC PHỐ ẤY · HÔM NAY</text>
+</svg>
