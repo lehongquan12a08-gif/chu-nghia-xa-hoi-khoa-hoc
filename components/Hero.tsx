@@ -39,6 +39,8 @@ export default function Hero() {
         .call(playChime, [4], 0.45)
         .fromTo(q('.hw-years'), { opacity: 0, scale: 1.2 }, { opacity: 1, scale: 1, duration: 0.05 }, 0.45)
         .fromTo(q('.hw-tagline'), { opacity: 0, y: 18 }, { opacity: 1, y: 0, duration: 0.05 }, 0.55)
+        // tấm phiếu hiện vật trượt vào (desktop)
+        .fromTo(q('.hero-card'), { opacity: 0, x: 60 }, { opacity: 1, x: 0, duration: 0.08 }, 0.12)
         // giữ trọn khung, rồi mờ dần nhường chương mở đầu
         .to(q('.hero-stage'), { opacity: 0, duration: 0.08 }, 0.9)
         .to(q('.hero-bgimg'), { scale: 1.1, ease: 'none', duration: 0.02 }, 0.98);
@@ -52,12 +54,31 @@ export default function Hero() {
         <div className="hero-stage absolute inset-0">
           {/* ảnh tư liệu mở đầu — full-bleed */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
+          {/* nền mờ: dải tem đường 1973 chìm phía sau tạo không khí */}
           <img
             src="/images/csk/bao-tem2.webp"
             alt=""
             className="hero-bgimg will-transform pointer-events-none absolute inset-0 h-full w-full object-cover"
-            style={{ filter: 'contrast(1.05) brightness(0.82) sepia(0.15)', objectPosition: '72% 38%' }}
+            style={{ filter: 'blur(2px) brightness(0.32) sepia(0.25)', objectPosition: 'center 40%' }}
           />
+          {/* HIỆN VẬT: Phiếu mua lương thực TP.HCM (1987) đóng khung nghiêng bên phải
+              — không bị chữ đè; mobile ẩn (chữ ở giữa, nền tem mờ là đủ) */}
+          <div
+            className="hero-card will-transform absolute right-[4vw] top-1/2 hidden -translate-y-1/2 md:block"
+            style={{ height: 'min(58vh, 30vw)', transform: 'translateY(-50%) rotate(-4deg)', opacity: 0 }}
+          >
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/csk/phieu-hcm.webp"
+              alt="Phiếu mua lương thực — TP. Hồ Chí Minh, 1987"
+              className="h-full w-auto border-[6px] border-[#f0e6ce] shadow-[0_44px_130px_rgba(0,0,0,0.8)]"
+              style={{ filter: 'contrast(1.03)' }}
+            />
+            {/* w-0 min-w-full: chú thích ôm đúng bề rộng ảnh, không kéo giãn khối */}
+            <p className="mt-3 w-0 min-w-full text-balance text-center font-typewriter text-[11px] leading-snug tracking-[0.1em] text-vn-ivory/55">
+              Phiếu mua lương thực · TP.HCM · 1987 — tư liệu sưu tầm
+            </p>
+          </div>
           {/* scrim: đậm bên TRÁI cho khối chữ — tấm tem phiếu bên phải luôn thoáng */}
           <div
             className="pointer-events-none absolute inset-0"

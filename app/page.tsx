@@ -115,7 +115,7 @@ export default function Home() {
             { src: '/images/csk/wm-jam.webp', title: 'Dòng xe máy — nhịp sống đô thị', year: 'TP.HCM', source: 'Wikimedia Commons · Mike · CC BY 2.0' },
             { src: '/images/csk/wm-thaprua.webp', title: 'Tháp Rùa trước những tòa nhà kính — truyền thống giữa hiện đại', year: '2023', source: 'Wikimedia Commons · Takeshi Aida · CC BY-SA 2.0' },
             { src: '/images/csk/wm-longbien.webp', title: 'Cầu Long Biên (1899–1902) — chứng nhân đi qua mọi thời kỳ', year: 'hôm nay', source: 'Wikimedia Commons · Quangpraha · CC0' },
-            { src: '/images/csk/homnay-factory.svg', title: 'Dây chuyền nhà máy công nghệ', year: '2020s', source: 'Ô chờ ảnh — CC' },
+            { src: '/images/csk/homnay-factory.webp', title: 'Dây chuyền sản xuất trong nhà máy', year: '2020s', source: 'Ảnh tư liệu sưu tầm' },
           ]}
         />
         <ProgressBars8 id="ch-2011" />
