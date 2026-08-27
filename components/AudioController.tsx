@@ -39,7 +39,7 @@ const NARR_FADE_MS = 350;
 const V = 'v=5';
 // NHẠC NỀN dịu (pad ngũ cung tự soạn, loop 96s không khục) — file đã bake NHỎ
 // (peak ≈ -18 dBFS) nên an toàn cả trên iOS (nơi element.volume bị bỏ qua).
-const AMBIENT_SRC = `/audio/nhac-nen.wav?v=1`;
+const AMBIENT_SRC = `/audio/nhac-nen.wav?v=2`;
 const AMBIENT_VOL = 0.65; // mức nền hành trình (đã tăng thêm theo yêu cầu)
 // CUNG MỞ ĐẦU: nhạc nổi lên rõ lúc bắt đầu, rồi tự hạ về nền — đúng lúc phần
 // lồng tiếng sẽ vào (khi có giọng đọc, cơ chế duck còn hạ sâu hơn nữa).
