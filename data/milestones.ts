@@ -31,7 +31,7 @@ export const MILESTONES: Record<string, Milestone> = {
     keyText: 'THẮNG HAI ĐẾ QUỐC — VẪN THIẾU GẠO ĂN',
     caption:
       'Đất nước bước ra khỏi chiến tranh với nền nông nghiệp lạc hậu, bị bao vây cấm vận; cơ chế kế hoạch hóa tập trung, quan liêu, bao cấp khiến sản xuất đình đốn — mua bán bằng tem phiếu, xếp hàng trước cửa hàng mậu dịch.',
-    image: '/images/csk/baocap-xephang.svg',
+    image: '/images/csk/baocap-xephang.webp',
     symbol: 'letter',
     background: BG_SEPIA,
     pos: 'center 30%',
@@ -46,7 +46,7 @@ export const MILESTONES: Record<string, Milestone> = {
     keyText: 'NHÌN THẲNG VÀO SỰ THẬT',
     caption:
       '4.247 ngày sau toàn thắng 30/04/1975, Đại hội VI (15–18/12/1986) đề ra đường lối Đổi mới toàn diện — "nhìn thẳng vào sự thật, đánh giá đúng sự thật, nói rõ sự thật" — phát triển nền kinh tế nhiều thành phần, mở đường ra khỏi khủng hoảng.',
-    image: '/images/csk/dh6.svg',
+    image: '/images/csk/dh6.webp',
     symbol: 'star',
     background: BG_DOIMOI,
     pos: 'center 25%',
@@ -61,7 +61,7 @@ export const MILESTONES: Record<string, Milestone> = {
     keyText: 'TỪ THIẾU GẠO ĐẾN XUẤT KHẨU GẠO',
     caption:
       'Khoán 10 (1988) cởi trói cho nông nghiệp; năm 1989 Việt Nam trở lại xuất khẩu gạo. Gia nhập ASEAN (28/07/1995), bình thường hóa quan hệ Việt – Mỹ (1995), gia nhập WTO (11/01/2007) — nền kinh tế nhiều thành phần từng bước hội nhập thế giới.',
-    image: '/images/csk/gian3.svg',
+    image: '/images/csk/gian3.webp',
     symbol: 'sickle',
     background: BG_NAY,
     pos: 'center 30%',

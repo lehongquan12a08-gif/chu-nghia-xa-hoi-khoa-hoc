@@ -46,10 +46,10 @@ export default function Home() {
           title="Đời sống thời bao cấp"
           intro="Những hiện vật kể chuyện thay lời: một tấm tem nhỏ từng quyết định bữa cơm của cả một gia đình."
           photos={[
-            { src: '/images/csk/baocap-sogao.svg', title: 'Sổ mua lương thực ("sổ gạo")', year: '1976–1986', source: 'Ô chờ ảnh tư liệu — Bảo tàng Hà Nội / TTXVN', contain: true },
-            { src: '/images/csk/bao-tem2.svg', title: 'Tem phiếu — gạo, thịt, vải', year: '1978', source: 'Ô chờ ảnh tư liệu — scan hiện vật' },
-            { src: '/images/csk/baocap-xephang.svg', title: 'Xếp hàng trước cửa hàng mậu dịch quốc doanh', year: '~1980', source: 'Ô chờ ảnh tư liệu — TTXVN', tall: true },
-            { src: '/images/csk/pho-xedap.svg', title: 'Phố Hà Nội — thời xe đạp', year: 'thập niên 1980', source: 'Ô chờ ảnh tư liệu' },
+            { src: '/images/csk/baocap-sogao.webp', title: 'Sổ mua lương thực ("sổ gạo") — TP. Hồ Chí Minh', year: 'thời bao cấp', source: 'Ảnh tư liệu sưu tầm', contain: true },
+            { src: '/images/csk/bao-tem2.webp', title: 'Phiếu đường trẻ em — Hà Nội', year: '1973', source: 'Ảnh tư liệu · báo Dân Trí' },
+            { src: '/images/csk/baocap-xephang.webp', title: 'Xếp hàng trước cửa hàng chất đốt số 12', year: 'thời bao cấp', source: 'Ảnh tư liệu sưu tầm', tall: true },
+            { src: '/images/csk/pho-xedap.webp', title: 'Phố Hà Nội — thời xe đạp', year: 'thập niên 1980', source: 'Ảnh tư liệu sưu tầm' },
             { src: '/images/csk/hero-tem.svg', title: 'Phiếu mua lương thực (đồ họa phục dựng)', year: '1985', source: 'Đồ họa vector do nhóm phục dựng' },
           ]}
         />
@@ -71,13 +71,19 @@ export default function Home() {
           title="Mười ngày tháng Chạp 1986"
           background="linear-gradient(180deg, #14100a 0%, #16281f 60%, #14100a 100%)"
           photos={[
-            { src: '/images/csk/dh6.svg', title: 'Phiên khai mạc Đại hội VI', year: '15/12/1986', source: 'Ô chờ ảnh tư liệu — TTXVN', tall: true },
-            { src: '/images/csk/gian2-bao.svg', title: 'Trang báo đưa tin đường lối Đổi mới', year: '12/1986', source: 'Ô chờ ảnh — thư viện báo Nhân Dân' },
-            { src: '/images/csk/baocap-sogao.svg', title: 'Tấm sổ gạo — những năm cuối cùng', year: '1986–1989', source: 'Ô chờ ảnh tư liệu', contain: true },
+            { src: '/images/csk/dh6.webp', title: 'Đại hội đại biểu toàn quốc lần thứ VI của Đảng', year: '15–18/12/1986', source: 'Ảnh tư liệu sưu tầm', tall: true },
+            { src: '/images/csk/gian2-bao.webp', title: 'Báo Nhân Dân — số Xuân Bính Dần', year: '1986', source: 'Tư liệu báo Nhân Dân', contain: true },
+            { src: '/images/csk/baocap-sogao.webp', title: 'Tấm sổ gạo — những năm cuối cùng của bao cấp', year: '1986–1989', source: 'Ảnh tư liệu sưu tầm', contain: true },
           ]}
         />
-        {/* HIỆN VẬT TƯƠNG TÁC: kéo màn thời gian */}
-        <TimeSlider id="ch-keoman" />
+        {/* HIỆN VẬT TƯƠNG TÁC: kéo màn thời gian — phố Hàng Đào 1954 ↔ hôm nay */}
+        <TimeSlider
+          id="ch-keoman"
+          before="/images/csk/hangdao-xua.webp"
+          after="/images/csk/hangdao-nay.webp"
+          beforeLabel="10/10/1954"
+          afterLabel="HÔM NAY"
+        />
 
         {/* ═══ GIAN 3 · CỬA MỞ (1986–2007) ═══ */}
         <MilestoneChapter milestone={MILESTONES.gian3} />
@@ -87,9 +93,9 @@ export default function Home() {
           title="Từ thiếu gạo đến xuất khẩu gạo"
           background="linear-gradient(180deg, #14100a 0%, #10201d 60%, #14100a 100%)"
           photos={[
-            { src: '/images/csk/gian3.svg', title: 'Nông dân được mùa sau Khoán 10', year: '1988–1989', source: 'Ô chờ ảnh tư liệu — TTXVN', tall: true },
-            { src: '/images/csk/gian3-asean.svg', title: 'Việt Nam gia nhập ASEAN', year: '28/07/1995', source: 'Ô chờ ảnh tư liệu — TTXVN' },
-            { src: '/images/csk/gian3-wto.svg', title: 'Gia nhập Tổ chức Thương mại Thế giới (WTO)', year: '11/01/2007', source: 'Ô chờ ảnh tư liệu — TTXVN' },
+            { src: '/images/csk/gian3.webp', title: 'Bí thư Kim Ngọc thăm đồng — "khoán hộ" Vĩnh Phúc, tiền đề của Khoán 10 (1988)', year: 'thập niên 1960', source: 'Ảnh tư liệu sưu tầm', tall: true },
+            { src: '/images/csk/gian3-asean.webp', title: 'Việt Nam gia nhập ASEAN', year: '28/07/1995', source: 'Ảnh: TTXVN' },
+            { src: '/images/csk/gian3-wto.webp', title: 'Lễ ký hợp tác sau khi gia nhập WTO — Hà Nội', year: '24/01/2007', source: 'Ảnh tư liệu sưu tầm' },
             { src: '/images/csk/wm-rice.webp', title: 'Vựa lúa Đồng bằng sông Cửu Long', year: 'Cần Thơ', source: 'Wikimedia Commons · Dragfyre · CC BY-SA 3.0' },
             { src: '/images/csk/wm-vendor.webp', title: 'Gánh hàng trên phố — kinh tế nhiều thành phần đời thường', year: 'Hà Nội', source: 'Wikimedia Commons · yeowatzup · CC BY 2.0' },
           ]}
@@ -104,7 +110,7 @@ export default function Home() {
           background="linear-gradient(180deg, #14100a 0%, #10201d 60%, #14100a 100%)"
           photos={[
             { src: '/images/csk/wm-skyline.webp', title: 'Đường chân trời TP. Hồ Chí Minh bên sông Sài Gòn', year: '2020s', source: 'Wikimedia Commons · Pimnl · CC0', tall: true },
-            { src: '/images/csk/homnay-2.svg', title: 'Quét mã QR ở quán vỉa hè', year: 'hôm nay', source: 'Ô chờ ảnh — nhóm tự chụp' },
+            { src: '/images/csk/homnay-2.webp', title: 'Thanh toán bằng mã VietQR', year: 'hôm nay', source: 'Ảnh tư liệu sưu tầm' },
             { src: '/images/csk/wm-metro.webp', title: 'Metro Bến Thành – Suối Tiên qua Thảo Điền', year: '2024', source: 'Wikimedia Commons · HikariTenshi · CC BY 4.0' },
             { src: '/images/csk/wm-jam.webp', title: 'Dòng xe máy — nhịp sống đô thị', year: 'TP.HCM', source: 'Wikimedia Commons · Mike · CC BY 2.0' },
             { src: '/images/csk/wm-thaprua.webp', title: 'Tháp Rùa trước những tòa nhà kính — truyền thống giữa hiện đại', year: '2023', source: 'Wikimedia Commons · Takeshi Aida · CC BY-SA 2.0' },

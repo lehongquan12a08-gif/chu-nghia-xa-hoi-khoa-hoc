@@ -122,7 +122,8 @@ export default function TimeSlider({
             </span>
           </div>
           <p className="mt-4 text-center font-body text-[13px] text-vn-ivory/55 md:text-[15px]">
-            Kéo vạch vàng để du hành — vẫn con phố ấy, vẫn con người ấy, chỉ cách nhau một chữ <b className="text-vn-gold">Đổi mới</b>.
+            Kéo vạch vàng để du hành — <b className="text-vn-gold">phố Hàng Đào</b>, từ ngày tiếp quản Thủ đô
+            đến hôm nay: vẫn con phố ấy, vẫn nhịp buôn bán ấy.
           </p>
         </Reveal>
       </div>
