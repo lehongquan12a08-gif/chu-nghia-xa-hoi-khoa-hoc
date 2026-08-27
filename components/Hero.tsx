@@ -59,25 +59,44 @@ export default function Hero() {
             src="/images/csk/bao-tem2.webp"
             alt=""
             className="hero-bgimg will-transform pointer-events-none absolute inset-0 h-full w-full object-cover"
-            style={{ filter: 'blur(2px) brightness(0.32) sepia(0.25)', objectPosition: 'center 40%' }}
+            style={{ filter: 'blur(3px) brightness(0.22) sepia(0.3)', objectPosition: 'center 40%' }}
           />
-          {/* HIỆN VẬT: Phiếu mua lương thực TP.HCM (1987) đóng khung nghiêng bên phải
-              — không bị chữ đè; mobile ẩn (chữ ở giữa, nền tem mờ là đủ) */}
+          {/* vignette: dìm nền vào bóng tối phòng trưng bày — sáng nhẹ nơi khối chữ */}
           <div
-            className="hero-card will-transform absolute right-[4vw] top-1/2 hidden -translate-y-1/2 md:block"
-            style={{ height: 'min(58vh, 30vw)', transform: 'translateY(-50%) rotate(-4deg)', opacity: 0 }}
+            className="pointer-events-none absolute inset-0"
+            style={{
+              background:
+                'radial-gradient(ellipse at 32% 45%, rgba(20,16,10,0) 0%, rgba(20,16,10,0.45) 55%, rgba(20,16,10,0.88) 100%)',
+            }}
+          />
+          {/* HIỆN VẬT TREO TƯỜNG: Phiếu mua lương thực TP.HCM (1987) — khung gỗ,
+              lót ngà, đèn rọi tranh, biển nhãn dưới khung; mobile ẩn */}
+          <div
+            className="hero-card will-transform absolute right-[6vw] top-[46%] hidden md:block"
+            style={{ height: 'min(56vh, 28vw)', transform: 'translateY(-50%) rotate(-2.5deg)', opacity: 0 }}
           >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src="/images/csk/phieu-hcm.webp"
-              alt="Phiếu mua lương thực — TP. Hồ Chí Minh, 1987"
-              className="h-full w-auto border-[6px] border-[#f0e6ce] shadow-[0_44px_130px_rgba(0,0,0,0.8)]"
-              style={{ filter: 'contrast(1.03)' }}
+            {/* quầng đèn rọi tranh */}
+            <div
+              className="pointer-events-none absolute -inset-[22%]"
+              style={{
+                background:
+                  'radial-gradient(closest-side, rgba(233,184,76,0.17) 0%, rgba(233,184,76,0.05) 55%, transparent 78%)',
+              }}
             />
-            {/* w-0 min-w-full: chú thích ôm đúng bề rộng ảnh, không kéo giãn khối */}
-            <p className="mt-3 w-0 min-w-full text-balance text-center font-typewriter text-[11px] leading-snug tracking-[0.1em] text-vn-ivory/55">
-              Phiếu mua lương thực · TP.HCM · 1987 — tư liệu sưu tầm
-            </p>
+            {/* khung gỗ sẫm + lớp lót ngà */}
+            <div className="relative h-full border-[9px] border-[#241b10] bg-[#efe4c9] p-[12px] shadow-[0_40px_110px_rgba(0,0,0,0.85)]">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/csk/phieu-hcm.webp"
+                alt="Phiếu mua lương thực — TP. Hồ Chí Minh, 1987"
+                className="h-full w-auto"
+                style={{ filter: 'contrast(1.04)' }}
+              />
+            </div>
+            {/* biển nhãn bảo tàng dưới khung */}
+            <div className="absolute -bottom-[50px] left-1/2 -translate-x-1/2 whitespace-nowrap border border-vn-gold-antique/40 bg-[#1d1710]/90 px-3 py-2 text-center font-typewriter text-[10px] tracking-[0.1em] text-vn-gold-antique">
+              PHIẾU MUA LƯƠNG THỰC · TP.HCM · 1987
+            </div>
           </div>
           {/* scrim: đậm bên TRÁI cho khối chữ — tấm tem phiếu bên phải luôn thoáng */}
           <div
