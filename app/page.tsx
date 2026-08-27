@@ -76,15 +76,6 @@ export default function Home() {
             { src: '/images/csk/baocap-sogao.webp', title: 'Tấm sổ gạo — những năm cuối cùng của bao cấp', year: '1986–1989', source: 'Ảnh tư liệu sưu tầm', contain: true, tall: true },
           ]}
         />
-        {/* HIỆN VẬT TƯƠNG TÁC: kéo màn thời gian — phố Hàng Đào 1954 ↔ hôm nay */}
-        <TimeSlider
-          id="ch-keoman"
-          before="/images/csk/hangdao-xua.webp"
-          after="/images/csk/hangdao-nay.webp"
-          beforeLabel="10/10/1954"
-          afterLabel="HÔM NAY"
-        />
-
         {/* ═══ GIAN 3 · CỬA MỞ (1986–2007) ═══ */}
         <MilestoneChapter milestone={MILESTONES.gian3} />
         <GallerySection
@@ -117,6 +108,14 @@ export default function Home() {
             { src: '/images/csk/wm-longbien.webp', title: 'Cầu Long Biên (1899–1902) — chứng nhân đi qua mọi thời kỳ', year: 'hôm nay', source: 'Wikimedia Commons · Quangpraha · CC0' },
             { src: '/images/csk/homnay-factory.webp', title: 'Dây chuyền sản xuất trong nhà máy', year: '2020s', source: 'Ảnh tư liệu sưu tầm' },
           ]}
+        />
+        {/* HIỆN VẬT TƯƠNG TÁC khép gian 4: kéo màn thời gian — Hàng Đào 1954 ↔ hôm nay */}
+        <TimeSlider
+          id="ch-keoman"
+          before="/images/csk/hangdao-xua.webp"
+          after="/images/csk/hangdao-nay.webp"
+          beforeLabel="10/10/1954"
+          afterLabel="HÔM NAY"
         />
         <ProgressBars8 id="ch-2011" />
         <WordCascade
