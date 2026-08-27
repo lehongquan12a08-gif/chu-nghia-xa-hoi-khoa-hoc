@@ -17,7 +17,7 @@
 ## Ô CHỜ ẢNH — nhóm bấm chọn & tải (nguồn báo chí/TTXVN, dùng cho mục đích học tập + ghi nguồn)
 Không có bản giấy phép mở trên Commons cho các mục dưới — cần lấy từ nguồn chính thống,
 ghi rõ "Nguồn: TTXVN / tên báo" trên nhãn:
-1. `baocap-xephang` — Xếp hàng mậu dịch: tìm "xếp hàng thời bao cấp TTXVN" / triển lãm "Thương nhớ thời bao cấp" (VnExpress, Dân Trí có bộ ảnh)
+1. `baocap-xephang` + `baocap-maudich` (quầy Hàng Tết) — Xếp hàng mậu dịch: tìm "xếp hàng thời bao cấp TTXVN" / triển lãm "Thương nhớ thời bao cấp" (VnExpress, Dân Trí có bộ ảnh)
 2. `baocap-sogao` + `bao-tem2` — Sổ gạo/tem phiếu scan: bộ sưu tập Bảo tàng Hà Nội; tìm "tem phiếu thời bao cấp bảo tàng"
 3. `pho-xedap` — Phố Hà Nội 1980s: kho flickr "manhhai" (chọn ảnh gắn nhãn CC), từ khóa "Hanoi 1980s"
 4. `dh6` — Đại hội VI 12/1986: tìm "Đại hội VI 1986 TTXVN" (baotanglichsu.vn, dangcongsan.vn có ảnh)

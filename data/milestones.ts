@@ -29,12 +29,11 @@ export const MILESTONES: Record<string, Milestone> = {
     eyebrow: 'Gian trưng bày thứ nhất',
     heading: 'Đêm trước Đổi mới',
     keyText: 'THẮNG HAI ĐẾ QUỐC — VẪN THIẾU GẠO ĂN',
-    caption:
-      'Đất nước bước ra khỏi chiến tranh với nền nông nghiệp lạc hậu, bị bao vây cấm vận; cơ chế kế hoạch hóa tập trung, quan liêu, bao cấp khiến sản xuất đình đốn — mua bán bằng tem phiếu, xếp hàng trước cửa hàng mậu dịch.',
-    image: '/images/csk/baocap-xephang.webp',
+    caption: 'Kế hoạch hóa tập trung, quan liêu, bao cấp — cả nước mua bán bằng tem phiếu.',
+    image: '/images/csk/baocap-maudich.webp',
     symbol: 'letter',
     background: BG_SEPIA,
-    pos: 'center 30%',
+    pos: 'center 35%',
   },
 
   // GIAN 2 — Khúc quanh: Đại hội VI (12/1986) — màu bắt đầu tràn vào
@@ -44,8 +43,7 @@ export const MILESTONES: Record<string, Milestone> = {
     eyebrow: 'Gian trưng bày thứ hai · Đại hội đại biểu toàn quốc lần thứ VI',
     heading: 'Khúc quanh',
     keyText: 'NHÌN THẲNG VÀO SỰ THẬT',
-    caption:
-      '4.247 ngày sau toàn thắng 30/04/1975, Đại hội VI (15–18/12/1986) đề ra đường lối Đổi mới toàn diện — "nhìn thẳng vào sự thật, đánh giá đúng sự thật, nói rõ sự thật" — phát triển nền kinh tế nhiều thành phần, mở đường ra khỏi khủng hoảng.',
+    caption: 'Đại hội VI (15–18/12/1986) mở đường lối Đổi mới — kinh tế nhiều thành phần.',
     image: '/images/csk/dh6.webp',
     symbol: 'star',
     background: BG_DOIMOI,
@@ -59,8 +57,7 @@ export const MILESTONES: Record<string, Milestone> = {
     eyebrow: 'Gian trưng bày thứ ba',
     heading: 'Cửa mở',
     keyText: 'TỪ THIẾU GẠO ĐẾN XUẤT KHẨU GẠO',
-    caption:
-      'Khoán 10 (1988) cởi trói cho nông nghiệp; năm 1989 Việt Nam trở lại xuất khẩu gạo. Gia nhập ASEAN (28/07/1995), bình thường hóa quan hệ Việt – Mỹ (1995), gia nhập WTO (11/01/2007) — nền kinh tế nhiều thành phần từng bước hội nhập thế giới.',
+    caption: 'Khoán 10 (1988) · xuất khẩu gạo trở lại (1989) · ASEAN (1995) · WTO (2007).',
     image: '/images/csk/gian3.webp',
     symbol: 'sickle',
     background: BG_NAY,
@@ -74,8 +71,7 @@ export const MILESTONES: Record<string, Milestone> = {
     eyebrow: 'Gian trưng bày thứ tư',
     heading: 'Chương đang viết',
     keyText: 'CON HỔ MỚI CỦA CHÂU Á',
-    caption:
-      'GDP từ khoảng 14 tỷ USD (1985) lên khoảng 430 tỷ USD (2023); tỷ lệ nghèo từ 58% (1993) xuống dưới 3% — nguồn: Tổng cục Thống kê, World Bank. Thời kỳ quá độ chưa kết thúc: chương cuối do chính chúng ta viết.',
+    caption: 'GDP: ~14 → ~430 tỷ USD · tỷ lệ nghèo: 58% → dưới 3% (World Bank).',
     image: '/images/csk/wm-skyline.webp',
     symbol: 'flag',
     background: BG_NAY,
