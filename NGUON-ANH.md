@@ -12,7 +12,7 @@
 | `wm-longbien.webp` | Cầu Long Biên (biển Daydé & Pillé 1899–1902) | Quangpraha | CC0 | commons.wikimedia.org/wiki/File:Long-bien-bridge-3371617.jpg |
 
 ## Đồ họa nhóm tự phục dựng (bản quyền của nhóm)
-`hero-tem.svg` (phiếu mua lương thực) · `pho-xua.svg` / `pho-nay.svg` (phố hai thời kỳ)
+`pho-xua.svg` / `pho-nay.svg` (phố hai thời kỳ — dự phòng cho TimeSlider, hiện không hiển thị)
 
 ## Ô CHỜ ẢNH — nhóm bấm chọn & tải (nguồn báo chí/TTXVN, dùng cho mục đích học tập + ghi nguồn)
 Không có bản giấy phép mở trên Commons cho các mục dưới — cần lấy từ nguồn chính thống,

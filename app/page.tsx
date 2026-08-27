@@ -50,7 +50,7 @@ export default function Home() {
             { src: '/images/csk/bao-tem2.webp', title: 'Phiếu đường trẻ em — Hà Nội', year: '1973', source: 'Ảnh tư liệu · báo Dân Trí' },
             { src: '/images/csk/baocap-xephang.webp', title: 'Xếp hàng trước cửa hàng chất đốt số 12', year: 'thời bao cấp', source: 'Ảnh tư liệu sưu tầm', tall: true },
             { src: '/images/csk/pho-xedap.webp', title: 'Phố Hà Nội — thời xe đạp', year: 'thập niên 1980', source: 'Ảnh tư liệu sưu tầm' },
-            { src: '/images/csk/hero-tem.svg', title: 'Phiếu mua lương thực (đồ họa phục dựng)', year: '1985', source: 'Đồ họa vector do nhóm phục dựng' },
+            { src: '/images/csk/phieu-hcm.webp', title: 'Phiếu mua lương thực — TP. Hồ Chí Minh', year: '1987', source: 'Ảnh tư liệu sưu tầm', contain: true, tall: true },
           ]}
         />
         <DateReveal
