@@ -46,7 +46,7 @@ export default function Home() {
           title="Đời sống thời bao cấp"
           intro="Những hiện vật kể chuyện thay lời: một tấm tem nhỏ từng quyết định bữa cơm của cả một gia đình."
           photos={[
-            { src: '/images/csk/baocap-sogao.webp', title: 'Sổ mua lương thực ("sổ gạo") — TP. Hồ Chí Minh', year: 'thời bao cấp', source: 'Ảnh tư liệu sưu tầm', contain: true },
+            { src: '/images/csk/baocap-sogao.webp', title: 'Sổ mua lương thực ("sổ gạo") — TP. Hồ Chí Minh', year: 'thời bao cấp', source: 'Ảnh tư liệu sưu tầm', contain: true, tall: true },
             { src: '/images/csk/bao-tem2.webp', title: 'Phiếu đường trẻ em — Hà Nội', year: '1973', source: 'Ảnh tư liệu · báo Dân Trí' },
             { src: '/images/csk/baocap-xephang.webp', title: 'Xếp hàng trước cửa hàng chất đốt số 12', year: 'thời bao cấp', source: 'Ảnh tư liệu sưu tầm', tall: true },
             { src: '/images/csk/pho-xedap.webp', title: 'Phố Hà Nội — thời xe đạp', year: 'thập niên 1980', source: 'Ảnh tư liệu sưu tầm' },
@@ -72,8 +72,8 @@ export default function Home() {
           background="linear-gradient(180deg, #14100a 0%, #16281f 60%, #14100a 100%)"
           photos={[
             { src: '/images/csk/dh6.webp', title: 'Đại hội đại biểu toàn quốc lần thứ VI của Đảng', year: '15–18/12/1986', source: 'Ảnh tư liệu sưu tầm', tall: true },
-            { src: '/images/csk/gian2-bao.webp', title: 'Báo Nhân Dân — số Xuân Bính Dần', year: '1986', source: 'Tư liệu báo Nhân Dân', contain: true },
-            { src: '/images/csk/baocap-sogao.webp', title: 'Tấm sổ gạo — những năm cuối cùng của bao cấp', year: '1986–1989', source: 'Ảnh tư liệu sưu tầm', contain: true },
+            { src: '/images/csk/gian2-bao.webp', title: 'Báo Nhân Dân — số Xuân Bính Dần', year: '1986', source: 'Tư liệu báo Nhân Dân', contain: true, tall: true },
+            { src: '/images/csk/baocap-sogao.webp', title: 'Tấm sổ gạo — những năm cuối cùng của bao cấp', year: '1986–1989', source: 'Ảnh tư liệu sưu tầm', contain: true, tall: true },
           ]}
         />
         {/* HIỆN VẬT TƯƠNG TÁC: kéo màn thời gian — phố Hàng Đào 1954 ↔ hôm nay */}

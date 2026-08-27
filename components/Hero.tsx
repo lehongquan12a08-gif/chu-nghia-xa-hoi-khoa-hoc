@@ -53,10 +53,10 @@ export default function Hero() {
           {/* ảnh tư liệu mở đầu — full-bleed */}
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/images/csk/hero-tem.svg"
+            src="/images/csk/bao-tem2.webp"
             alt=""
             className="hero-bgimg will-transform pointer-events-none absolute inset-0 h-full w-full object-cover"
-            style={{ filter: 'contrast(1.04) brightness(0.9)', objectPosition: '62% 30%' }}
+            style={{ filter: 'contrast(1.05) brightness(0.82) sepia(0.15)', objectPosition: '72% 38%' }}
           />
           {/* scrim: đậm bên TRÁI cho khối chữ — tấm tem phiếu bên phải luôn thoáng */}
           <div
